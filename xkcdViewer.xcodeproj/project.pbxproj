@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		55F307BA2C0098A800CCFE6D /* xkcdViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F307B92C0098A800CCFE6D /* xkcdViewerApp.swift */; };
-		55F307BC2C0098A800CCFE6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F307BB2C0098A800CCFE6D /* ContentView.swift */; };
 		55F307BE2C0098AA00CCFE6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F307BD2C0098AA00CCFE6D /* Assets.xcassets */; };
 		55F307C12C0098AA00CCFE6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F307C02C0098AA00CCFE6D /* Preview Assets.xcassets */; };
 		55F307CB2C0098AA00CCFE6D /* xkcdViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F307CA2C0098AA00CCFE6D /* xkcdViewerTests.swift */; };
 		55F307D52C0098AA00CCFE6D /* xkcdViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F307D42C0098AA00CCFE6D /* xkcdViewerUITests.swift */; };
 		55F307D72C0098AA00CCFE6D /* xkcdViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F307D62C0098AA00CCFE6D /* xkcdViewerUITestsLaunchTests.swift */; };
+		55F307E42C00991A00CCFE6D /* ComicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F307E32C00991A00CCFE6D /* ComicViewModel.swift */; };
+		55F307E62C00997700CCFE6D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F307E52C00997700CCFE6D /* NetworkManager.swift */; };
+		55F307E82C009A5B00CCFE6D /* ComicRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F307E72C009A5B00CCFE6D /* ComicRowView.swift */; };
+		55F307F02C009E9F00CCFE6D /* ComicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F307EF2C009E9F00CCFE6D /* ComicDetailView.swift */; };
+		55F307F22C009F0800CCFE6D /* ComicsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F307F12C009F0800CCFE6D /* ComicsListView.swift */; };
+		55F307F42C009F6F00CCFE6D /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F307F32C009F6F00CCFE6D /* Comic.swift */; };
+		55F307F62C00A70200CCFE6D /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F307F52C00A70200CCFE6D /* SearchBarView.swift */; };
+		55F307F82C00AD3900CCFE6D /* ColorExtantion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F307F72C00AD3900CCFE6D /* ColorExtantion.swift */; };
+		55F307FB2C00C6BC00CCFE6D /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 55F307FA2C00C6BC00CCFE6D /* SwiftSoup */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +44,6 @@
 /* Begin PBXFileReference section */
 		55F307B62C0098A800CCFE6D /* xkcdViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xkcdViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F307B92C0098A800CCFE6D /* xkcdViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xkcdViewerApp.swift; sourceTree = "<group>"; };
-		55F307BB2C0098A800CCFE6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		55F307BD2C0098AA00CCFE6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55F307C02C0098AA00CCFE6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		55F307C62C0098AA00CCFE6D /* xkcdViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xkcdViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +51,14 @@
 		55F307D02C0098AA00CCFE6D /* xkcdViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xkcdViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F307D42C0098AA00CCFE6D /* xkcdViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xkcdViewerUITests.swift; sourceTree = "<group>"; };
 		55F307D62C0098AA00CCFE6D /* xkcdViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xkcdViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		55F307E32C00991A00CCFE6D /* ComicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewModel.swift; sourceTree = "<group>"; };
+		55F307E52C00997700CCFE6D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		55F307E72C009A5B00CCFE6D /* ComicRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicRowView.swift; sourceTree = "<group>"; };
+		55F307EF2C009E9F00CCFE6D /* ComicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDetailView.swift; sourceTree = "<group>"; };
+		55F307F12C009F0800CCFE6D /* ComicsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsListView.swift; sourceTree = "<group>"; };
+		55F307F32C009F6F00CCFE6D /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
+		55F307F52C00A70200CCFE6D /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		55F307F72C00AD3900CCFE6D /* ColorExtantion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtantion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55F307FB2C00C6BC00CCFE6D /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +111,11 @@
 			isa = PBXGroup;
 			children = (
 				55F307B92C0098A800CCFE6D /* xkcdViewerApp.swift */,
-				55F307BB2C0098A800CCFE6D /* ContentView.swift */,
-				55F307BD2C0098AA00CCFE6D /* Assets.xcassets */,
+				55F307E92C009B6000CCFE6D /* Models */,
+				55F307EB2C009B7900CCFE6D /* ViewModels */,
+				55F307EC2C009B8200CCFE6D /* Networking */,
+				55F307EA2C009B7100CCFE6D /* Views */,
+				55F307ED2C009B8A00CCFE6D /* Utilities */,
 				55F307BF2C0098AA00CCFE6D /* Preview Content */,
 			);
 			path = xkcdViewer;
@@ -105,6 +124,7 @@
 		55F307BF2C0098AA00CCFE6D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				55F307BD2C0098AA00CCFE6D /* Assets.xcassets */,
 				55F307C02C0098AA00CCFE6D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -127,6 +147,49 @@
 			path = xkcdViewerUITests;
 			sourceTree = "<group>";
 		};
+		55F307E92C009B6000CCFE6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				55F307F32C009F6F00CCFE6D /* Comic.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		55F307EA2C009B7100CCFE6D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55F307EF2C009E9F00CCFE6D /* ComicDetailView.swift */,
+				55F307E72C009A5B00CCFE6D /* ComicRowView.swift */,
+				55F307F12C009F0800CCFE6D /* ComicsListView.swift */,
+				55F307F52C00A70200CCFE6D /* SearchBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		55F307EB2C009B7900CCFE6D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				55F307E32C00991A00CCFE6D /* ComicViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		55F307EC2C009B8200CCFE6D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				55F307E52C00997700CCFE6D /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		55F307ED2C009B8A00CCFE6D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				55F307F72C00AD3900CCFE6D /* ColorExtantion.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +206,9 @@
 			dependencies = (
 			);
 			name = xkcdViewer;
+			packageProductDependencies = (
+				55F307FA2C00C6BC00CCFE6D /* SwiftSoup */,
+			);
 			productName = xkcdViewer;
 			productReference = 55F307B62C0098A800CCFE6D /* xkcdViewer.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +281,9 @@
 				Base,
 			);
 			mainGroup = 55F307AD2C0098A800CCFE6D;
+			packageReferences = (
+				55F307F92C00C64F00CCFE6D /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = 55F307B72C0098A800CCFE6D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +326,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55F307BC2C0098A800CCFE6D /* ContentView.swift in Sources */,
+				55F307F02C009E9F00CCFE6D /* ComicDetailView.swift in Sources */,
+				55F307F62C00A70200CCFE6D /* SearchBarView.swift in Sources */,
+				55F307F42C009F6F00CCFE6D /* Comic.swift in Sources */,
+				55F307E62C00997700CCFE6D /* NetworkManager.swift in Sources */,
+				55F307F82C00AD3900CCFE6D /* ColorExtantion.swift in Sources */,
+				55F307E82C009A5B00CCFE6D /* ComicRowView.swift in Sources */,
+				55F307E42C00991A00CCFE6D /* ComicViewModel.swift in Sources */,
 				55F307BA2C0098A800CCFE6D /* xkcdViewerApp.swift in Sources */,
+				55F307F22C009F0800CCFE6D /* ComicsListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +664,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		55F307F92C00C64F00CCFE6D /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		55F307FA2C00C6BC00CCFE6D /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55F307F92C00C64F00CCFE6D /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 55F307AE2C0098A800CCFE6D /* Project object */;
 }
