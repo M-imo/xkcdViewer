@@ -8,8 +8,8 @@ This is a simple XKCD comic viewer app for iOS, created as an MVP to showcase co
 
 - Browse through XKCD comics
 - View comic details including the title, image, alt text, and explanation
-- Search for comics by their number or text
-- Favorite comics for offline viewing
+- Search for comics by words /text 
+- Favorite comics
 - Share comics via the system share sheet
 - Pagination for loading more comics
 
@@ -37,7 +37,7 @@ The project follows the MVVM architecture:
 
 **Coding practices and conventions**
 
-Consistent Naming Conventions:
+Consistent naming conventions:
 * Used camelCase for variables and functions, PascalCase for types.
 * Frequent use of comments: Added comments to explain the purpose of classes, functions, and complex logic.
 * Modular code: Separated concerns into different files and folders (e.g., Networking, Models, ViewModels, Views).
