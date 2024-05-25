@@ -62,7 +62,7 @@ The VCS history includes commits, each representing a significant step in the de
 * Error handling: Network errors and data parsing errors are handled gracefully.
 * State management: Effective use of Swift's state management with @Published and @State.
 
-## Delay explanation
+## Delay 
 There was a delay in implementing the following features due to personal commitments:
 - Notifications for new comic publications
 - Support for multiple form factors
