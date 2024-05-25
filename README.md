@@ -23,7 +23,8 @@ This is a simple XKCD comic viewer app for iOS, created as an MVP to showcase co
 
 **Project structure**
 
-<img width="237" alt="Skjermbilde 2024-05-24 kl  16 09 32" src="https://github.com/M-imo/xkcdViewer/assets/97694145/b19445e1-35c7-45dd-910f-d102c0be8774">
+
+<img width="236" alt="Skjermbilde 2024-05-25 kl  22 06 06" src="https://github.com/M-imo/xkcdViewer/assets/97694145/c2bc3ed7-38da-42ec-8ee3-be42cf5727ff">
 
 
 
