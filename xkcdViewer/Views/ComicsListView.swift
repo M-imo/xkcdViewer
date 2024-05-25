@@ -45,7 +45,7 @@ struct ComicsListView: View {
                     }
                 }
                 .navigationBarTitle("Comics", displayMode: .inline)
-                .foregroundColor(Color(hex: "#F3D0D7")) // Use primary color for navigation bar title
+                .foregroundColor(Color(hex: "#F3D0D7")) // Primary color for navigation bar title
             }
             .background(Color(hex: "#F6F5F2")) // Light background for main view
         }

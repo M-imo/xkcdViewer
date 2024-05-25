@@ -13,18 +13,19 @@ struct ComicDetailView: View {
     @ObservedObject var viewModel: ComicViewModel
     let comic: Comic
 
-    @State private var isFavorited: Bool
+    @State private var isFavorited: Bool // Tracks if the comic is favorited
 
+    // Initializer to set up the view with the ViewModel and comic
     init(viewModel: ComicViewModel, comic: Comic) {
         self.viewModel = viewModel
         self.comic = comic
-        self._isFavorited = State(initialValue: viewModel.isFavorite(comic))
+        self._isFavorited = State(initialValue: viewModel.isFavorite(comic)) // Set the initial favorite state
     }
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                // Display comic image
+                // Comic image
                 AsyncImage(url: URL(string: comic.img)) { image in
                     image.resizable()
                 } placeholder: {
@@ -35,22 +36,22 @@ struct ComicDetailView: View {
                 .background(Color(hex: "#FFEFEF").opacity(0.1))
                 .cornerRadius(10)
 
-                // Display comic title
+                // Comic title
                 Text(comic.title)
                     .font(.largeTitle)
-                    .foregroundColor(Color(hex: "#F3D0D7"))
+                    .foregroundColor(Color(hex: "#5E1675")) // Updated colors
                     .padding(.top)
 
-                // Display comic alt text
+                // Comic alt text
                 Text(comic.alt)
                     .font(.body)
                     .foregroundColor(Color.gray)
 
-                // Display comic explanation
+                // Comic explanation
                 if let explanation = comic.explanation {
                     Text("Explanation")
                         .font(.title2)
-                        .foregroundColor(Color(hex: "#F3D0D7"))
+                        .foregroundColor(Color(hex: "#5E1675")) // Updated colors
                         .padding(.top)
 
                     Text(explanation)
@@ -70,7 +71,7 @@ struct ComicDetailView: View {
                     Text(isFavorited ? "Favorited" : "Favorite")
                 }
                 .padding()
-                .background(isFavorited ? Color.gray : Color(hex: "#FFEFEF"))
+                .background(Color(hex: isFavorited ? "#D988B9" : "#B0578D")) // Updated colors
                 .foregroundColor(.white)
                 .cornerRadius(10)
 
@@ -81,7 +82,7 @@ struct ComicDetailView: View {
                     Text("Share")
                 }
                 .padding()
-                .background(Color(hex: "#F3D0D7"))
+                .background(Color(hex: "#FACBEA")) // Updated colors
                 .foregroundColor(.white)
                 .cornerRadius(10)
             }
@@ -91,10 +92,12 @@ struct ComicDetailView: View {
         .background(Color(hex: "#F6F5F2"))
     }
 
+    // Method to share the comic
     private func shareComic() {
         let url = URL(string: comic.img)!
         let activityController = UIActivityViewController(activityItems: [comic.title, url], applicationActivities: nil)
 
+        // Show the share sheet
         if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
            let rootViewController = scene.windows.first?.rootViewController {
             rootViewController.present(activityController, animated: true, completion: nil)

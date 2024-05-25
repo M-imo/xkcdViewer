@@ -26,7 +26,7 @@ struct ComicRowView: View {
             VStack(alignment: .leading) {
                 Text(comic.title)
                     .font(.headline)
-                    .foregroundColor(Color(hex: "#F3D0D7")) // Use primary color for title
+                    .foregroundColor(Color(hex: "#5E1675")) // Updated colors
                 Text(comic.alt)
                     .font(.subheadline)
                     .foregroundColor(Color.gray) // Neutral color for subtitle

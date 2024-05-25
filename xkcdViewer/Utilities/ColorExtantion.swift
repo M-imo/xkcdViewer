@@ -24,4 +24,5 @@ extension Color {
     }
 }
 
-// Color palette retrieved from: https://colorhunt.co/palette/f6f5f2f0ebe3f3d0d7ffefef
+// Color palette retrieved from: https://colorhunt.co/palettes/purple
+// Color palette retrieved from: https://colorhunt.co/palette/ffe4d6facbead988b9b0578d

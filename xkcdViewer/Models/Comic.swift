@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+// Represents a comic
 struct Comic: Codable, Identifiable {
     var id: Int { num }
     let num: Int
@@ -15,7 +15,7 @@ struct Comic: Codable, Identifiable {
     let img: String
     let alt: String
     let transcript: String
-    var explanation: String? // Optional property
+    var explanation: String? 
 }
 
 
