@@ -55,9 +55,17 @@ To keep the MVP simple and focus on core functionalities, unit tests and integra
 
 **VCS history**
 
-The VCS history includes multiple commits, each representing a significant step in the development process, such as setting up the project, implementing features, and refining the codebase.
+The VCS history includes commits, each representing a significant step in the development process, such as setting up the project, implementing features, and refining the codebase.
 
 **Notable points**
 * Pagination: Implemented to load more comics as the user scrolls.
 * Error handling: Network errors and data parsing errors are handled gracefully.
 * State management: Effective use of Swift's state management with @Published and @State.
+
+## Delay 
+There was a delay in implementing the following features due to personal commitments:
+- Notifications for new comic publications
+- Support for multiple form factors
+
+I appreciate your understanding as I took the time to celebrate a special occasion with family. Thank you for your patience. 🌸
+
