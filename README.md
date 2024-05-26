@@ -8,7 +8,7 @@ This is a simple XKCD comic viewer app for iOS, created as an MVP to showcase co
 
 - Browse through XKCD comics
 - View comic details including the title, image, alt text, and explanation
-- Search for comics by words /text 
+- Search for comics by number or text 
 - Favorite comics
 - Share comics via the system share sheet
 - Pagination for loading more comics
@@ -49,10 +49,7 @@ The project is free of lint warnings and code smells. Proper error handling is i
 
 **Unit & integration tests**
 
-To keep the MVP simple and focus on core functionalities, unit tests and integration tests are not included in this version. However, they can be added as follows:
-
-* Unit tests: Test the ViewModel logic and networking functions.
-* Integration tests: Test the full flow from fetching data to displaying it in the UI.
+To keep the MVP simple and focus on core functionalities, unit tests and integration tests are not included in this version. 
 
 **VCS history**
 
@@ -60,7 +57,7 @@ The VCS history includes commits, each representing a significant step in the de
 
 **Notable points**
 * Pagination: Implemented to load more comics as the user scrolls.
-* Error handling: Network errors and data parsing errors are handled gracefully.
+* Error handling: Network errors and data parsing errors are handled.
 * State management: Effective use of Swift's state management with @Published and @State.
 
 ## Delay 
